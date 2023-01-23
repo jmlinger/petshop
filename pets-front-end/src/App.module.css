@@ -1,0 +1,14 @@
+/* *{
+  background-image: url(./images/pets.jpg);
+  background-size: cover;
+} */
+
+.main {
+  min-height: 65vh;
+  padding: 2em;
+  text-align: center;
+}
+
+.main h2 {
+  margin-bottom: 0.8em;
+}

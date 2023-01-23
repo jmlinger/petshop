@@ -1,0 +1,1 @@
+declare module '*.module.css'; // todos os arquivos modules sao css

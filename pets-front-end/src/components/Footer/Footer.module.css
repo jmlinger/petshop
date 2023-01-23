@@ -1,0 +1,17 @@
+.footer{
+  align-items: center;
+  background-color: #B4F8C8;
+  color: white;
+  display: flex;
+  height: 200px;
+  justify-content: center;
+}
+
+.footer span {
+  color: #FFAEBC;
+  font-weight: bold;
+}
+
+.footer p span {
+  background-color: #B4F8C8;
+}
