@@ -1,0 +1,47 @@
+scalar DateTime
+
+type Pet {
+  id: Int!
+  name: String!
+  age: Int!
+  type: String!
+  tutorsName: String!
+  createdAt: DateTime
+}
+
+input CreatePetInput {
+  name: String!
+  age: Int!
+  type: String!
+  tutorsName: String!
+  createdAt: DateTime
+}
+
+input UpdatePetInput {
+  id: Int!
+  name: String!
+  age: Int!
+  type: String!
+  tutorsName: String!
+  createdAt: DateTime
+}
+
+type Query {
+  pets: [Pet]!
+  # pet(id: Int!): pet
+  # totalPets: Int!
+}
+
+type Mutation {
+  createPet(createPetInput: CreatePetInput!): Pet!
+  updatePet(updatePetInput: UpdatePetInput!): Pet!
+  removePet(id: Int!): Pet!
+}
+
+# type Result {
+#   total: Int!
+# }
+
+# type Subscription {
+#   totalUpdated: Result
+# }
